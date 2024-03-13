@@ -4,11 +4,22 @@
   "description": "a backend",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.0"
-  }
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.1"
+  },
+    "ignore": ["*.test.js", "*.spec.js", ".git", "node_modules"],
+    "execMap": {
+      "mjs": "node --experimental-modules"
+    }
+  
+  
 }
