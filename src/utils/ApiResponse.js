@@ -6,3 +6,5 @@ class ApiResponse {
         this.success = statusCode < 400; // Fixed: used assignment operator instead of comparison operator
     }
 }
+
+module.exports = ApiResponse;
